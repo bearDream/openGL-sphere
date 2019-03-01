@@ -24,12 +24,9 @@ std::vector<float> drawglobeVBO(){
     GLfloat NumAngleHy = 0;    // 当前横向角度
     GLfloat NumAngleZx = 0;    // 当前纵向角度
     
-    GLfloat x = 0;
-    GLfloat y = 0;
-    GLfloat z = 0;
     for (float j = 0; j <statcky; j++ )
     {
-        for (float i = 0; i <stlicex; i ++)
+        for (float i = 0; i <stlicex; i++)
         {
             NumAngleHy = angleHy*i;
             NumAngleZx = angleZx*j; // 起点都是轴指向的方向。根据右手定则决定转向，只要转向相同，那么两个就合适
@@ -46,8 +43,6 @@ std::vector<float> drawglobeVBO(){
 std::vector<int> drawglobeEBO(){
     vector<int> ebo;
     vector<float> vbo = drawglobeVBO();
-    int only = vbo.size();
-    int num = (int)((only/(3*statcky))*2);
     for (int x = 0; x<stlicex/2;)
     {
         for (int y = 0;y<statcky;y++)
@@ -130,7 +125,7 @@ int main()
         // model = glm::rotate(model, glm::radians(0.0f), glm::vec3(1.0f, 0.3f, 0.5f));
         lampShader.setMat4("model", model);
         glBindVertexArray(cubeVAO);
-        glDrawElements(GL_TRIANGLES, mfc.size(), GL_UNSIGNED_INT,0);
+        glDrawElements(GL_TRIANGLES, (int)mfc.size(), GL_UNSIGNED_INT,0);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }

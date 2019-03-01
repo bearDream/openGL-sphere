@@ -41,6 +41,7 @@
 		D87D1EB022297D6800E3ED6D /* stb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb.cpp; sourceTree = "<group>"; };
 		D87D1EB222297D6800E3ED6D /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		D87D1EB322297D6800E3ED6D /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
+		D87D1EB72229830E00E3ED6D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				D87D1EAA22297D6800E3ED6D /* header */,
 				D87D1EA722297D0500E3ED6D /* shaders */,
 				D87D1E9922297CDB00E3ED6D /* main.cpp */,
+				D87D1EB72229830E00E3ED6D /* .gitignore */,
 			);
 			path = "openGL-sphere";
 			sourceTree = "<group>";
